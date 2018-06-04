@@ -1,0 +1,11 @@
+mod = [
+	"StickyGrim"
+]
+
+package = [
+	"resource_packages/StickyGrim/StickyGrim"
+]
+
+lua = [
+	"scripts/mods/StickyGrim/*"
+]
