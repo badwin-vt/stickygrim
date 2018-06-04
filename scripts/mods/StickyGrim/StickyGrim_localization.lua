@@ -1,6 +1,6 @@
 return {
 	mod_description = {
-		en = "StickyGrim description"
+		en = "Prevents throwing grims away unless you're holding block while throwing."
 	},
 --[[
 	some_other_text_id = {
