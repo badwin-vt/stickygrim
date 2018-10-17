@@ -10,7 +10,7 @@ local mod = get_mod("StickyGrim")
 	Hooks
 --]]
 
-mod:hook("ActionThrowGrimoire.finish", function(func, self, reason, ...)
+mod:hook(ActionThrowGrimoire, "finish", function(func, self, reason, ...)
 		local input_service = Managers.input:get_service("Player")
 
 		if input_service:get("action_two_hold") then
@@ -44,13 +44,13 @@ end
 
 -- Call when governing settings checkbox is unchecked
 mod.on_disabled = function(is_first_call)
-	mod:disable_all_hooks()
+	-- mod:disable_all_hooks()
 end
 
 -- Call when governing settings checkbox is checked
 mod.on_enabled = function(is_first_call)
-	mod:echo('StickyGrim initialized')
-	mod:enable_all_hooks()
+	-- mod:echo('StickyGrim initialized')
+	-- mod:enable_all_hooks()
 end
 
 
